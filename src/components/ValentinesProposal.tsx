@@ -91,7 +91,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Congratulations! You have completed the game.
+            Congrats Yumyum! You have completed the game.
           </motion.h2>
         )}
         {step === 1 && (
@@ -103,7 +103,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            I have a surprise for you!
+            Passcode is now unlocked, but first...
           </motion.h2>
         )}
         {step === 2 && (
@@ -175,8 +175,8 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Thank you for accepting, I love you! 💕
-            <p className="text-sm mt-4">For more information, write me!!! 💌</p>
+            Thank you for accepting! I love you Yumyum! 💕
+            <p className="text-sm mt-4">Passcode to unlock the box is 0811 💌</p>
             <Image
               src="/hamster_jumping.gif"
               alt="Hamster Feliz"
