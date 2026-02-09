@@ -71,7 +71,6 @@ export default function PhotoPairGame({
         setSelected([]);
 } else {
   setIncorrect([firstIndex, index]);
-  setSelected([]); 
   // red flash cleanup
   setTimeout(() => {
     setIncorrect([]);
