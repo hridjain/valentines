@@ -18,7 +18,7 @@ export default function BackgroundMusic({ play }: { play: boolean }) {
 
   return (
     <audio ref={audioRef} loop>
-      <source src="/music/love.mp3" type="audio/mpeg" />
+      <source src="/music.mp3" type="audio/mpeg" />
     </audio>
   );
 }
