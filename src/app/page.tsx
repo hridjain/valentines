@@ -6,22 +6,28 @@ import PhotoPairGame from "../components/PhotoPairGame";
 import ValentinesProposal from "@/components/ValentinesProposal";
 import TextFooter from "@/components/TextFooter";
 import OrientationGuard from "@/components/OrientationGuard";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 const ANIM_DURATION = 2;
 
 export default function Home() {
   const [showValentinesProposal, setShowValentinesProposal] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [playMusic, setPlayMusic] = useState(false);
 
   const handleShowProposal = () => {
     setIsTransitioning(true);
+
     setTimeout(() => {
       setShowValentinesProposal(true);
+      setPlayMusic(true); // 🎵 start background music here
     }, ANIM_DURATION * 1000);
   };
 
   return (
     <OrientationGuard>
+      <BackgroundMusic play={playMusic} />
+
       <main className="flex items-center justify-center min-h-screen bg-black overflow-hidden relative">
         {!showValentinesProposal ? (
           <motion.div
