@@ -69,14 +69,14 @@ export default function PhotoPairGame({
       if (images[firstIndex] === images[index]) {
         setMatched((prev) => [...prev, firstIndex, index]);
         setSelected([]);
-     } else {
+} else {
   setIncorrect([firstIndex, index]);
+  setSelected([]); // allow next click immediately
 
   setTimeout(() => {
     setIncorrect([]);
-    setSelected([]);
-  }, 600);
-      }
+  }, 300); // quick single red flash
+}
     } else {
       setSelected([index]);
     }
