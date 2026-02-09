@@ -71,12 +71,18 @@ export default function PhotoPairGame({
         setSelected([]);
 } else {
   setIncorrect([firstIndex, index]);
-  setSelected([]); // allow next click immediately
 
+  // keep tiles visible briefly
+  setTimeout(() => {
+    setSelected([]);
+  }, 250); // lets you see the 2nd tile
+
+  // red flash cleanup
   setTimeout(() => {
     setIncorrect([]);
-  }, 300); // quick single red flash
+  }, 300);
 }
+
     } else {
       setSelected([index]);
     }
