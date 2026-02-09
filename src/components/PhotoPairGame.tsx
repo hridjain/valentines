@@ -71,16 +71,12 @@ export default function PhotoPairGame({
         setSelected([]);
 } else {
   setIncorrect([firstIndex, index]);
-
-  // keep tiles visible briefly
-  setTimeout(() => {
-    setSelected([]);
-  }, 250); // lets you see the 2nd tile
-
+  setSelected([]); 
   // red flash cleanup
   setTimeout(() => {
     setIncorrect([]);
-  }, 300);
+    setSelected([]);
+  }, 600);
 }
 
     } else {
