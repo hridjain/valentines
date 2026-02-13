@@ -25,8 +25,8 @@ export default function TextFooter() {
 
       {/* Copyright */}
 {/* Volume reminder */}
-<p className="absolute bottom-5 right-5 text-white text-sm opacity-60">
-  🔊 Keep your volume on
+<p className="absolute bottom-5 right-5 text-white text-sm opacity-40">
+  made with <3 by hrid
 </p>
     </>
   );
