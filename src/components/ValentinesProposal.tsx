@@ -161,7 +161,7 @@ export default function ValentinesProposal() {
                 onMouseEnter={() => setPosition(getRandomPosition())}
                 onClick={() => setPosition(getRandomPosition())}
               >
-                No, I won&apos;t 😢
+                Aisa dungi na 🤬
               </button>
             </div>
           </motion.div>
