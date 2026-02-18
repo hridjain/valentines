@@ -176,7 +176,7 @@ export default function ValentinesProposal() {
             exit={{ opacity: 0 }}
           >
             Thank you for accepting! I love you Yumyum! 💕
-            <p className="text-sm mt-4">Passcode to unlock the box is 0811 💌</p>
+            <p className="text-sm mt-4">Distance only measures kilometres, not how close you are to my heart. Passcode to unlock the box is 0811 💌</p>
             <Image
               src="/hamster_jumping.gif"
               alt="Hamster Feliz"
